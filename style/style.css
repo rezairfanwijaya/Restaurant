@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bgColor);
+}
+
+:root {
+    --bgColor: #2C2C2C;
+    --fontColor: #FFF;
+    --span: #59C714;
+    --bgMenu: #373737;
+}
+
+
+/* float button */
+
+.float-botton {
+    color: var(--fontColor);
+    font-size: 1.6rem;
+    height: 47px;
+    width: 47px;
+    background-color: var(--span);
+    text-align: center;
+    line-height: 52px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 6px;
+    z-index: 99;
+}
+
+
+/* navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img.logo {
+    width: 40%;
+}
+
+nav img.github {
+    width: 60%;
+}
+
+.main p.title-main {
+    color: var(--fontColor);
+    margin: 50px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.main span {
+    color: var(--span);
+}
+
+.main .menu {
+    background-color: var(--bgMenu);
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 3px 5px 25px rgba(0, 0, 0, 20%);
+}
+
+.main .menu:hover {
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+.main .menu img {
+    display: grid;
+    margin: 0 auto;
+}
+
+.main .list-menu {
+    color: var(--fontColor);
+    margin: 30px 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.main .menu h6.harga {
+    margin: 20px 0;
+}
+
+.main .menu .order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .menu .level-pedas {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main .menu .level-pedas img {
+    width: 20px;
+}
+
+.main .menu .order input {
+    width: 19%;
+    text-align: center;
+    height: 30px;
+    margin: 0 10px;
+    background-color: var(--bgMenu);
+    color: var(--fontColor);
+}
+
+.main input#pesan {
+    display: grid;
+    background-color: var(--span);
+    color: var(--fontColor);
+    border: none;
+    font-size: 1.3rem;
+    padding: 6px 32px;
+    margin: 80px auto;
+    border-radius: 6px;
+    box-shadow: 3px 5px 25px rgba(0, 0, 0, 20%);
+    letter-spacing: 2px;
+}
+
+.keranjang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding: 20px;
+    /* background-color: var(--bgMenu); */
+    border-radius: 20px;
+    border: 3px dashed var(--span);
+}
+
+.keranjang p.title-main {
+    margin: 20px 0;
+}
+
+.keranjang .detail-keranjang {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.keranjang p {
+    color: var(--fontColor);
+}
+
+.keranjang .total-belanja {
+    color: var(--span);
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keranjang .total-belanja p {
+    color: var(--span);
+}
+
+.back {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 60%;
+    padding: 10px 14px;
+    background-color: var(--span);
+    border-radius: 6px;
+}
+
+.back a {
+    text-align: center;
+    color: var(--fontColor);
+}
+
+
+/* responsive */
+
+@media (min-width:767px) and (max-width:1022px) {
+    .float-botton {
+        height: 55px;
+        width: 55px;
+        line-height: 60px;
+        bottom: 60px;
+        right: 26px;
+    }
+    .main .menu {
+        margin: 30px auto;
+        width: max-content;
+    }
+    .main input#pesan {
+        width: max-content;
+    }
+    .keranjang {
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 70px;
+        border-radius: 20px;
+        border: 4px dashed var(--span);
+        width: 80%;
+    }
+    .back {
+        width: 30%;
+    }
+}
+
+@media (min-width:1023px) {
+    .container {
+        padding: 0;
+    }
+    .float-botton {
+        height: 56px;
+        width: 56px;
+        line-height: 63px;
+        bottom: 60px;
+        right: 33px;
+    }
+    .main .menu {
+        margin: 30px auto;
+        width: 30%;
+    }
+    .main .menu img {
+        display: grid;
+        margin: 0 auto;
+    }
+    .main input#pesan {
+        width: 30%;
+    }
+    .main input#pesan:hover {
+        background-color: #54bb13;
+    }
+    .keranjang {
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 70px;
+        border-radius: 20px;
+        border: 2px dashed var(--span);
+        width: 45%;
+    }
+    .back {
+        width: 20%;
+        margin: 50px auto;
+    }
+}
