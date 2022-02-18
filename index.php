@@ -51,7 +51,7 @@ require_once('menu.php');
                 </div>
             </a>
 
-            <a href="https://github.com/rezairfanwijaya/" target="blank">
+            <a href="https://github.com/rezairfanwijaya/Restaurant" target="blank">
                 <img src="assets/img/github-dark.png" class="github img-fluid">
             </a>
         </nav>
